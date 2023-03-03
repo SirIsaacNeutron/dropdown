@@ -3,3 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 20px 30px;
+    background-color: hsl(0, 0%, 85%);
+}
+
+.link {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+
+    font-size: 1.1rem;
+
+    background-color: hsl(0, 0%, 85%);
+
+    outline: none;
+    transition: all 0.25s;
+}
+
+.link:hover {
+    background-color: hsl(0, 0%, 74%);
+}
