@@ -29,3 +29,37 @@ nav {
 .link:hover {
     background-color: hsl(0, 0%, 74%);
 }
+
+/* Enable absolute positioning for dropdown menus! */ 
+.dropdown-wrapper {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+
+    left: 0;
+    top: calc(100% + 5px);
+
+    padding: 5px;
+    background-color: white;
+    
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
+
+    /* The dropdowns shouldn't be clickable while invisible */
+    pointer-events: none;
+
+    /* Hide dropdowns by default */
+    opacity: 1;
+
+    transform: translateY(-10px);
+
+    transition: all 150ms ease-in-out;
+}
+
+.dropdown-wrapper.active > .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+}
