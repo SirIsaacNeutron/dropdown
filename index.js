@@ -1,6 +1,6 @@
 document.addEventListener("click", e => {
     // This can probably be done without data attributes
-    // But I personally think data attributes makes it easier
+    // But I personally think data attributes make it easier
     const isDropdownButton = e.target.matches("[data-dd-button]")
 
     // If the clicked element is not a dropdown button, 
