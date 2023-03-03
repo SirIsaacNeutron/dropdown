@@ -26,6 +26,7 @@ nav {
     transition: all 0.25s;
 }
 
+.dropdown-wrapper.active > .link,
 .link:hover {
     background-color: hsl(0, 0%, 74%);
 }
