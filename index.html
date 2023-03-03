@@ -6,17 +6,19 @@
 
         <link rel="stylesheet" href="styles.css">
         <title>Simple Dropdown Example</title>
+
+        <script defer src="index.js"></script>
     </head>
     <body>
         <nav>
-            <div class="dropdown-wrapper">
-                <button class="link">Information</button>
+            <div class="dropdown-wrapper" data-dd-wrapper>
+                <button class="link" data-dd-button>Information</button>
                 <div class="dropdown-menu">
                     <p>Testing</p>
                 </div>
             </div>
-            <div class="dropdown-wrapper">
-                <button class="link">Pricing</button>
+            <div class="dropdown-wrapper" data-dd-wrapper>
+                <button class="link" data-dd-button>Pricing</button>
                 <div class="dropdown-menu">$0.00</div>
             </div>
         </nav>
